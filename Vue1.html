@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>计数器</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        var count = 0
+        function clickFunc(){
+            document.getElementById("h1").innerText=`${++count}`
+        }
+    </script>
+     <!--   <script>
+    //定义一个Vue组件，名为App
+    const App = {
+        //定义组件中的数据
+        data(){
+            return{
+                count:0
+            }
+        },
+        //定义组件中的函数
+        methods:{
+            clickFunc(){
+                this.count++;
+            }
+        }
+    }
+    //将Vue组件绑定到页面上id为Application上的元素上
+    Vue.createApp(App).mount("#App")
+</script>-->
+</head>
+<body>
+    <div style="text-align: center;" >
+        <h1 id="h1">数值：0</h1>
+        <button onclick="clickFunc()">点击</button>
+    </div>
+
+</body>
+
+</html>
